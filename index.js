@@ -19,13 +19,11 @@ function get_computer_choice(){
 
 function get_human_choice(){
     //ask people rock paper scissors 
-    //promt the user: type 'r' for rock, 'p' for paper and 's'for scissors and save answer to variable
     let right_answer = false; 
 
     while(!right_answer){
 
         let answer = prompt("Type 'R' for Rock, 'P' for paper and 'S' for scissors");
-        //check if input is single character alphabet 'r', 'p', 's'
         let input_check = answer => /^[rsp]$/i.test(answer);
         
     
@@ -56,11 +54,7 @@ function get_human_choice(){
             return "Scissors";
         }
     }
-        //if its single character alphabet convert them to lowercase 
-            //check if it matchs with 'r' or 'p' or 's'
-                //if it matches return corepond value 
-                //if not promt the user again  
-
+        
                 
         
     
