@@ -114,6 +114,20 @@ function play_round(player_choice,computer_choice)
         }
 }
 
+function play_game(round_number)
+{
+    for(i = 0; i < round_number; i++)
+    {
+        const human_choice = get_human_choice();
+        const computer_choice = get_computer_choice();
+        play_round(human_choice,computer_choice);
+        
+    }
+
+    console.log(`Human socre: ${human_score}`);
+    console.log(`computer socre: ${computer_score}`);
+}
+
 
 
 
@@ -123,6 +137,5 @@ let computer_score = 0;
 
 
 console.log(get_computer_choice());
-const human_choice = get_human_choice();
-const computer_choice = get_computer_choice();
-play_round(human_choice,computer_choice);
+
+play_game(5);
