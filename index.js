@@ -63,5 +63,13 @@ function get_human_choice(){
 
 
 
+
+
+
+let human_score = 0;
+let computer_score = 0;
+
+
 console.log(get_computer_choice());
-get_human_choice();
+const human_choice = get_human_choice();
+const computer_choice = get_computer_choice();
